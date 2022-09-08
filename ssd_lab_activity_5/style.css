@@ -15,25 +15,28 @@ body
     margin: auto;  
     margin: 20 0 0 450px;  
     padding: 80px;  
-    background: #23463f;  
+    background: #BDC7C5;  
     border-radius: 15px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);  
-}  
+	transform: translateX(-50%) translateY(-50%);
+	border: 1px solid;
+	box-shadow: 5 px 10 px #888888;
+}
+.login:hover {
+	color:purple;
+}
 h1{  
 	position: relative;
     text-align: center;  
-    /*color: #277582;*/  
-	/*color: #04616e;*/
-	color: #0c1517;
+    color: #0c1517;
     padding: 20px;  
 }  
 label{  
-    color: #08ffd1;  
+    color: #047f68;  
     font-size: 17px;  
 }  
 #Uname{  
@@ -57,15 +60,14 @@ label{
     border: none;  
     border-radius: 17px;  
     padding-left: 7px;  
-    color: blue;  
-  
-  
+    color: blue;
 }  
 span{  
     color: white;  
     font-size: 17px;  
-}  
-/*a{  
-    float: right;  
-    background-color: grey;  
-}*/
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 50px;
+}

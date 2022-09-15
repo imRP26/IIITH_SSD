@@ -1,0 +1,33 @@
+form label{
+float: left;
+clear: left;
+width: 100px;
+text-align: left;
+margin-right: 10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+
+form input, select {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+padding: 20px;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Team Form</title>
+		<link rel='stylesheet' href='styles.css' type='text/css'>
+		<script src="teamRegistrationForm.js"></script>
+		<script>
+			document.addEventListener ("keydown", function (zEvent) {
+    			if (zEvent.ctrlKey  &&  zEvent.key === "m") {  
+        		var element = document.body;
+        		element.classList.toggle("dark-mode");
+    		}
+			});
+		</script>
+	</head>
+	<body onload="document.registration.userid.focus();">
+		<h1 align="center">Team Form</h1>
+		<br><br>
+		<form name='registration' onSubmit="return formValidation();">
+			<label for="managername" id="managername"><b>Manager Name</b></label>
+			<input type="text" name="managername" size="30" required><br><br>
+			<label for="groupemail" id="groupemail"><b>Group Email</b></label>
+			<input type="text" name="groupemail" size="50" required><br><br>
+			<label for="serverusername" id="serverusername"><b>Server Username</b></label>
+			<input type="text" name="serverusername" size="30" required><br><br>
+			<label for="serverpassword" id="serverpassword"><b>Server Password</b></label>
+			<input type="password" name="serverpassword" size="30" required><br><br>
+			<label for="confirmpassword" id="confirmpassword" onkeyup="password_verification();" ><b>Confirm Password</b></label>
+			<input type="password" name="confirmpassword" size="30" required><br><br>
+			<label for="teamlead" id="teamlead"><b>Team Lead</b></label>
+			<select name="Team Lead" id="teamlead" required>
+				<option selected="" value="Default">Point Break</option>
+				<option value="MS">Michael Scott</option>
+				<option value="JH">Jim Halpert</option>
+				<option value="DS">Dwight Schrute</option>
+				<option value="AB">Andy Bernard</option>
+			</select>
+			<div class="droptarget" ondragover="doHandler(event)" ondrop="dpHandler(event)">
+                <p draggable="true" id="dragtarget1" ondragstart="dsHandler(event)">Michael Scott</p>
+                <p draggable="true" id="dragtarget2" ondragstart="dsHandler(event)">Jim Halpert</p>
+                <p draggable="true" id="dragtarget3" ondragstart="dsHandler(event)">Dwight Schrute</p>
+                <p draggable="true" id="dragtarget4" ondragstart="dsHandler(event)">Andrew Bernard</p>
+            </div>
+            <div class="droptarget"></div>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</body>
+</html>
